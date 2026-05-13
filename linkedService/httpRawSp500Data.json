@@ -1,0 +1,12 @@
+{
+	"name": "httpRawSp500Data",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/xdSergej2005/FinanceDataFactory/refs/heads/main/Sp500.csv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
