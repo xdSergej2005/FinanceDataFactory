@@ -1,5 +1,5 @@
 {
-	"name": "httpsp500rawdata",
+	"name": "raw_sp500_data",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "httpRawSp500Data",

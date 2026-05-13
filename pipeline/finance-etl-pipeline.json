@@ -8,7 +8,7 @@
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
-					"retry": 0,
+					"retry": 3,
 					"retryIntervalInSeconds": 30,
 					"secureOutput": false,
 					"secureInput": false
@@ -48,7 +48,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "httpsp500rawdata",
+						"referenceName": "raw_sp500_data",
 						"type": "DatasetReference"
 					}
 				],
@@ -62,10 +62,17 @@
 			{
 				"name": "Raw_Crude",
 				"type": "Copy",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Raw_SP500",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "0.12:00:00",
-					"retry": 0,
+					"retry": 3,
 					"retryIntervalInSeconds": 30,
 					"secureOutput": false,
 					"secureInput": false
