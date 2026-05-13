@@ -18,9 +18,8 @@
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
-							"type": "AzureBlobFSReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
+							"type": "HttpReadSettings",
+							"requestMethod": "GET"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
@@ -49,7 +48,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "raw_sp500_data",
+						"referenceName": "httpsp500rawdata",
 						"type": "DatasetReference"
 					}
 				],
@@ -76,9 +75,8 @@
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
-							"type": "AzureBlobFSReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
+							"type": "HttpReadSettings",
+							"requestMethod": "GET"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
@@ -107,7 +105,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "raw_crude_data",
+						"referenceName": "raw_crude_data1",
 						"type": "DatasetReference"
 					}
 				],
