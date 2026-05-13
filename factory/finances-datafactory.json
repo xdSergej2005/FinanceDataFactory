@@ -1,0 +1,15 @@
+{
+	"name": "finances-datafactory",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "francecentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0787686c-b562-4a9b-b20a-ffcc960252dd",
+		"tenantId": "54efe58d-72b7-45af-9a01-30ee5f377a71"
+	}
+}
