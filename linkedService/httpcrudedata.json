@@ -1,0 +1,13 @@
+{
+	"name": "httpcrudedata",
+	"properties": {
+		"description": "crude data using http",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/xdSergej2005/FinanceDataFactory/refs/heads/main/crude-oil-price.csv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
